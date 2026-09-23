@@ -34,3 +34,12 @@
 - task ที่รอ Q-02: 1 task (`T-12`)
 - สิ่งที่ AI ให้ความสำคัญ: ระบุให้ทุก AC มี task ตรวจสอบอย่างน้อย 1 ตัว, ขณะเดียวกันเก็บ Q-02 เป็น blocker เพื่อหลีกเลี่ยงการเดาแบบผิดกฎ
 - บันทึกเพิ่มเติม: สถานะ spec เป็น Draft v2 และมี Open Question ที่ยังไม่ได้ตอบ (`Q-02`) จึงติดสถานะ `รอ Q-02` ใน task ที่เกี่ยวข้องกับหมายเลขคิว
+
+---
+
+## 2569-09-23 คำสั่ง: /implement T-01
+
+- เครื่องมือ: GitHub Copilot ใน VS Code
+- ไฟล์ที่สร้าง/แก้: `backend/app/db/models.py`, `backend/app/db/session.py`, `backend/app/db/migrations/001_init.py`, `backend/tests/test_T_01_db_schema.py`
+- ผล test: `cd backend && pytest tests/test_T_01_db_schema.py -q` (รันหลังแก้ import ที่ทำให้ test ไม่ collect ได้) -> ผลลัพธ์ผ่าน
+- สิ่งที่เกือบต้องเดาแต่ถามแทน: ไม่มี; ไฟล์ package init ที่จำเป็นสำหรับ import ถูกจัดการตามความจำเป็นของ Python package เพื่อให้ test โหลด module ได้
