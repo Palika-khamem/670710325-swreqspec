@@ -41,5 +41,3 @@ prompt-log.md                AI สร้างให้เมื่อใช้
 - อัปโหลด SRS และ diagram ของทีมไว้ที่ `docs/srs/`
 
 ## Reflection
-
-(เขียนท้ายคาบ 5 บรรทัด)
